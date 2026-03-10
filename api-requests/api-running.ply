@@ -1,4 +1,5 @@
 api-running:
   url: http://localhost:5000
   method: GET
-  headers: {}
+  headers:
+    Content-Type: application/json

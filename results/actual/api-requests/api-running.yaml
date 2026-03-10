@@ -1,0 +1,21 @@
+api-running:  # 10/3/2026, 13:10:22:317
+  request:
+    url: http://localhost:5000
+    method: GET
+    headers:
+      Content-Type: application/json
+  response:  # 69 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '21'
+      content-type: application/json; charset=utf-8
+      date: Tue, 10 Mar 2026 07:40:22 GMT
+      etag: W/"15-dSygXU5w9gBtfuXrYgYm60oILBQ"
+      x-powered-by: Express
+    body: |-
+      {
+        "msg": "Api running"
+      }
