@@ -1,0 +1,17 @@
+get-todo-by-id:  # 10/3/2026, 20:48:14:782
+  request:
+    url: http://localhost:5000/api/todos/1772110355996
+    method: GET
+    headers: {}
+  response:  # 37 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '2'
+      content-type: application/json; charset=utf-8
+      date: Tue, 10 Mar 2026 15:18:14 GMT
+      etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+      x-powered-by: Express
+    body: '{}'
