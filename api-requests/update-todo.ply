@@ -1,0 +1,9 @@
+update-todo:
+  url: http://localhost:5000/api/todos/1772110355996
+  method: PATCH
+  headers:
+    Content-Type: application/json
+  body: |-
+    {
+      "title": "Make Typescript Notes"
+    }

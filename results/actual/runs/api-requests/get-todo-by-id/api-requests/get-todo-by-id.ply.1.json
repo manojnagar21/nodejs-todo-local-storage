@@ -3,7 +3,7 @@
     "name": "get-todo-by-id",
     "test": "get-todo-by-id",
     "type": "request",
-    "end": "2026-03-10T15:18:14.857Z",
+    "end": "2026-03-12T14:45:48.918Z",
     "result": {
       "status": "Submitted",
       "message": "Request 'get-todo-by-id' SUBMITTED"
@@ -11,27 +11,29 @@
     "request": {
       "name": "get-todo-by-id",
       "type": "request",
-      "url": "http://localhost:5000/api/todos/1772110355996",
+      "url": "http://localhost:5000/api/todos/17721103559961",
       "method": "GET",
-      "headers": {},
-      "submitted": "2026-03-10T15:18:14.782Z"
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "submitted": "2026-03-12T14:45:48.828Z"
     },
     "response": {
-      "runId": "1f904d6d1d28",
+      "runId": "190035014854",
       "status": {
-        "code": 200,
-        "message": "OK"
+        "code": 403,
+        "message": "Forbidden"
       },
       "headers": {
         "connection": "close",
-        "content-length": "2",
+        "content-length": "141",
         "content-type": "application/json; charset=utf-8",
-        "date": "Tue, 10 Mar 2026 15:18:14 GMT",
-        "etag": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\"",
+        "date": "Thu, 12 Mar 2026 14:45:48 GMT",
+        "etag": "W/\"8d-r+NbjjL5m4yTbmh7hrr+r4F5FzQ\"",
         "x-powered-by": "Express"
       },
-      "body": "{}",
-      "time": 37
+      "body": "{\n  \"msg\": \"Error: Failed to fetch todo by Id\",\n  \"data\": \"error is not defined\",\n  \"success\": false,\n  \"status\": 403,\n  \"timestamp\": \"2026-03-12T14:45:48.897Z\"\n}",
+      "time": 51
     }
   }
 ]

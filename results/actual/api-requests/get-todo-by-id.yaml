@@ -1,17 +1,25 @@
-get-todo-by-id:  # 10/3/2026, 20:48:14:782
+get-todo-by-id:  # 12/3/2026, 20:15:48:828
   request:
-    url: http://localhost:5000/api/todos/1772110355996
+    url: http://localhost:5000/api/todos/17721103559961
     method: GET
-    headers: {}
-  response:  # 37 ms
+    headers:
+      Content-Type: application/json
+  response:  # 51 ms
     status:
-      code: 200
-      message: OK
+      code: 403
+      message: Forbidden
     headers:
       connection: close
-      content-length: '2'
+      content-length: '141'
       content-type: application/json; charset=utf-8
-      date: Tue, 10 Mar 2026 15:18:14 GMT
-      etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+      date: Thu, 12 Mar 2026 14:45:48 GMT
+      etag: W/"8d-r+NbjjL5m4yTbmh7hrr+r4F5FzQ"
       x-powered-by: Express
-    body: '{}'
+    body: |-
+      {
+        "msg": "Error: Failed to fetch todo by Id",
+        "data": "error is not defined",
+        "success": false,
+        "status": 403,
+        "timestamp": "2026-03-12T14:45:48.897Z"
+      }

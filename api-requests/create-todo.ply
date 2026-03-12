@@ -1,0 +1,9 @@
+create-todo:
+  url: http://localhost:5000/api/todos
+  method: POST
+  headers:
+    Content-Type: application/json
+  body: |-
+    {
+      "title": "Make Jvascript Notes"
+    }

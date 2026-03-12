@@ -1,18 +1,19 @@
-get-todos:  # 10/3/2026, 20:11:27:614
+get-todos:  # 12/3/2026, 14:56:46:711
   request:
     url: http://localhost:5000/api/todos
     method: GET
-    headers: {}
-  response:  # 52 ms
+    headers:
+      Content-Type: application/json
+  response:  # 49 ms
     status:
       code: 200
       message: OK
     headers:
       connection: close
-      content-length: '166'
+      content-length: '388'
       content-type: application/json; charset=utf-8
-      date: Tue, 10 Mar 2026 14:41:27 GMT
-      etag: W/"a6-ThbKIivB7UsSzEhI//+/nNV4NlU"
+      date: Thu, 12 Mar 2026 09:26:46 GMT
+      etag: W/"184-TdGWZ9UpcxgSsd4DTByY2nn090I"
       x-powered-by: Express
     body: |-
       {
@@ -22,9 +23,25 @@ get-todos:  # 10/3/2026, 20:11:27:614
             "id": 1772110355996,
             "title": "Make Javascript Notes",
             "completed": false
+          },
+          {
+            "id": 1773215299518,
+            "completed": false
+          },
+          {
+            "id": 1773299865108,
+            "title": "Make Jvascript Notes",
+            "completed": false
+          },
+          {
+            "id": 1773300001666,
+            "title": "Make Jvascript Notes",
+            "completed": false,
+            "createdAt": 1773300001666,
+            "updatedAt": null
           }
         ],
         "success": true,
         "status": 200,
-        "timestamp": "2026-03-10T14:41:27.688Z"
+        "timestamp": "2026-03-12T09:26:46.779Z"
       }
