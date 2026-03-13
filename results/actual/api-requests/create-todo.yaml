@@ -1,23 +1,27 @@
-get-todos:  # 13/3/2026, 11:49:06:826
+create-todo:  # 13/3/2026, 11:48:56:689
   request:
     url: http://localhost:5000/api/todos
-    method: GET
+    method: POST
     headers:
       Content-Type: application/json
-  response:  # 34 ms
+    body: |-
+      {
+        "title": "Make Jvascript Notes"
+      }
+  response:  # 110 ms
     status:
-      code: 200
-      message: OK
+      code: 201
+      message: Created
     headers:
       connection: close
-      content-length: '539'
+      content-length: '553'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 06:19:06 GMT
-      etag: W/"21b-eXafaiWu3CoaixQ1BHAGQbPXOhY"
+      date: Fri, 13 Mar 2026 06:18:56 GMT
+      etag: W/"229-KiIHagh/DAQ7saiGu9U4FiD3Bjk"
       x-powered-by: Express
     body: |-
       {
-        "msg": "All todos",
+        "msg": "Todo create succesfully",
         "data": [
           {
             "id": 1772110355996,
@@ -50,6 +54,6 @@ get-todos:  # 13/3/2026, 11:49:06:826
           }
         ],
         "success": true,
-        "status": 200,
-        "timestamp": "2026-03-13T06:19:06.883Z"
+        "status": 201,
+        "timestamp": "2026-03-13T06:18:56.823Z"
       }

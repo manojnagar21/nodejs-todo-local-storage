@@ -1,25 +1,31 @@
-get-todo-by-id:  # 12/3/2026, 20:15:48:828
+get-todo-by-id:  # 13/3/2026, 11:50:01:044
   request:
-    url: http://localhost:5000/api/todos/17721103559961
+    url: http://localhost:5000/api/todos/1773382736769
     method: GET
     headers:
       Content-Type: application/json
   response:  # 51 ms
     status:
-      code: 403
-      message: Forbidden
+      code: 200
+      message: OK
     headers:
       connection: close
-      content-length: '141'
+      content-length: '220'
       content-type: application/json; charset=utf-8
-      date: Thu, 12 Mar 2026 14:45:48 GMT
-      etag: W/"8d-r+NbjjL5m4yTbmh7hrr+r4F5FzQ"
+      date: Fri, 13 Mar 2026 06:20:01 GMT
+      etag: W/"dc-Fv+glHr3vpEs2dAn34B5Vyqov8g"
       x-powered-by: Express
     body: |-
       {
-        "msg": "Error: Failed to fetch todo by Id",
-        "data": "error is not defined",
-        "success": false,
-        "status": 403,
-        "timestamp": "2026-03-12T14:45:48.897Z"
+        "msg": "Todo by id",
+        "data": {
+          "id": 1773382736769,
+          "title": "Make Jvascript Notes",
+          "completed": false,
+          "createdAt": "2026-03-13T06:18:56.769Z",
+          "updatedAt": null
+        },
+        "success": true,
+        "status": 200,
+        "timestamp": "2026-03-13T06:20:01.114Z"
       }
