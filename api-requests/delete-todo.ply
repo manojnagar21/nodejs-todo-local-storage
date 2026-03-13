@@ -1,0 +1,4 @@
+delete-todo:
+  url: http://localhost:5000/api/todos/1773382736769
+  method: DELETE
+  headers: {}

@@ -1,4 +1,4 @@
-create-todo:  # 13/3/2026, 11:48:56:689
+create-todo:  # 13/3/2026, 15:21:03:298
   request:
     url: http://localhost:5000/api/todos
     method: POST
@@ -6,54 +6,53 @@ create-todo:  # 13/3/2026, 11:48:56:689
       Content-Type: application/json
     body: |-
       {
-        "title": "Make Jvascript Notes"
+        "title": "Make SQL Server Notes"
       }
-  response:  # 110 ms
+  response:  # 93 ms
     status:
       code: 201
       message: Created
     headers:
       connection: close
-      content-length: '553'
+      content-length: '636'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 06:18:56 GMT
-      etag: W/"229-KiIHagh/DAQ7saiGu9U4FiD3Bjk"
+      date: Fri, 13 Mar 2026 09:51:03 GMT
+      etag: W/"27c-2BU6MTjyP7DAL3peNM4KIGzCdiE"
       x-powered-by: Express
     body: |-
       {
         "msg": "Todo create succesfully",
         "data": [
           {
-            "id": 1772110355996,
-            "title": "Make Typescript Notes",
-            "completed": true,
-            "updatedAt": 1773382607572
-          },
-          {
-            "id": 1773215299518,
-            "completed": false
-          },
-          {
-            "id": 1773299865108,
-            "title": "Make Jvascript Notes",
-            "completed": false
-          },
-          {
-            "id": 1773300001666,
+            "id": 1773395407107,
             "title": "Make Jvascript Notes",
             "completed": false,
-            "createdAt": 1773300001666,
+            "createdAt": "2026-03-13T09:50:07.107Z",
             "updatedAt": null
           },
           {
-            "id": 1773382736769,
-            "title": "Make Jvascript Notes",
+            "id": 1773395417782,
+            "title": "Make Typescript Notes",
+            "completed": true,
+            "createdAt": "2026-03-13T09:50:17.782Z",
+            "updatedAt": "2026-03-13T09:50:41.422Z"
+          },
+          {
+            "id": 1773395453403,
+            "title": "Make Core Java Notes",
             "completed": false,
-            "createdAt": "2026-03-13T06:18:56.769Z",
+            "createdAt": "2026-03-13T09:50:53.403Z",
+            "updatedAt": null
+          },
+          {
+            "id": 1773395463414,
+            "title": "Make SQL Server Notes",
+            "completed": false,
+            "createdAt": "2026-03-13T09:51:03.414Z",
             "updatedAt": null
           }
         ],
         "success": true,
         "status": 201,
-        "timestamp": "2026-03-13T06:18:56.823Z"
+        "timestamp": "2026-03-13T09:51:03.440Z"
       }

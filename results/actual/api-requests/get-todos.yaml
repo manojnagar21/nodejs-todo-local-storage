@@ -1,55 +1,40 @@
-get-todos:  # 13/3/2026, 11:49:06:826
+get-todos:  # 13/3/2026, 15:26:46:786
   request:
     url: http://localhost:5000/api/todos
     method: GET
     headers:
       Content-Type: application/json
-  response:  # 34 ms
+  response:  # 50 ms
     status:
       code: 200
       message: OK
     headers:
       connection: close
-      content-length: '539'
+      content-length: '369'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 06:19:06 GMT
-      etag: W/"21b-eXafaiWu3CoaixQ1BHAGQbPXOhY"
+      date: Fri, 13 Mar 2026 09:56:46 GMT
+      etag: W/"171-QmpthCVOhPUfqrF5Q0mx88VqzL8"
       x-powered-by: Express
     body: |-
       {
         "msg": "All todos",
         "data": [
           {
-            "id": 1772110355996,
+            "id": 1773395407107,
+            "title": "Make Jvascript Notes",
+            "completed": false,
+            "createdAt": "2026-03-13T09:50:07.107Z",
+            "updatedAt": null
+          },
+          {
+            "id": 1773395417782,
             "title": "Make Typescript Notes",
             "completed": true,
-            "updatedAt": 1773382607572
-          },
-          {
-            "id": 1773215299518,
-            "completed": false
-          },
-          {
-            "id": 1773299865108,
-            "title": "Make Jvascript Notes",
-            "completed": false
-          },
-          {
-            "id": 1773300001666,
-            "title": "Make Jvascript Notes",
-            "completed": false,
-            "createdAt": 1773300001666,
-            "updatedAt": null
-          },
-          {
-            "id": 1773382736769,
-            "title": "Make Jvascript Notes",
-            "completed": false,
-            "createdAt": "2026-03-13T06:18:56.769Z",
-            "updatedAt": null
+            "createdAt": "2026-03-13T09:50:17.782Z",
+            "updatedAt": "2026-03-13T09:50:41.422Z"
           }
         ],
         "success": true,
         "status": 200,
-        "timestamp": "2026-03-13T06:19:06.883Z"
+        "timestamp": "2026-03-13T09:56:46.860Z"
       }

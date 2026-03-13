@@ -1,31 +1,25 @@
-get-todo-by-id:  # 13/3/2026, 11:50:01:044
+get-todo-by-id:  # 13/3/2026, 15:20:30:988
   request:
     url: http://localhost:5000/api/todos/1773382736769
     method: GET
     headers:
       Content-Type: application/json
-  response:  # 51 ms
+  response:  # 42 ms
     status:
-      code: 200
-      message: OK
+      code: 404
+      message: Not Found
     headers:
       connection: close
-      content-length: '220'
+      content-length: '116'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 06:20:01 GMT
-      etag: W/"dc-Fv+glHr3vpEs2dAn34B5Vyqov8g"
+      date: Fri, 13 Mar 2026 09:50:31 GMT
+      etag: W/"74-1fpT/EpD+BomkccSmlZC1bJAIVc"
       x-powered-by: Express
     body: |-
       {
-        "msg": "Todo by id",
-        "data": {
-          "id": 1773382736769,
-          "title": "Make Jvascript Notes",
-          "completed": false,
-          "createdAt": "2026-03-13T06:18:56.769Z",
-          "updatedAt": null
-        },
-        "success": true,
-        "status": 200,
-        "timestamp": "2026-03-13T06:20:01.114Z"
+        "msg": "Error: Todo doesn't exists",
+        "data": null,
+        "success": false,
+        "status": 404,
+        "timestamp": "2026-03-13T09:50:31.055Z"
       }

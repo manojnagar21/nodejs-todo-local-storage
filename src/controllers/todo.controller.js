@@ -7,7 +7,11 @@ export const getTodos = (_req, res) => {
     try {
         // To generate fake error
         // throw new Error("Testing my error library!"); 
-        const response = ApiResponse.successResponse("All todos", getStoredTodos(), HttpStatus.OK);
+        let pageNo = 1;
+        let perPageItems = 2;
+        let startIndex = 0;
+        let endIndex = 2;
+        const response = ApiResponse.successResponse("All todos", getStoredTodos().slice(0, 2), HttpStatus.OK);
         return res.status(response.status).json(response);
     } catch(error) {
         const response = ApiResponse.errorResponse("Failed to fetch todos", error, HttpStatus.FORBIDDEN);
@@ -78,6 +82,27 @@ export const updateTodo = (req, res) => {
         todo.updatedAt = new Date().toISOString()
         saveTodos(todos);
         const response = ApiResponse.successResponse("Todo updated succesfully", todo, HttpStatus.OK);
+        return res.status(response.status).json(response);
+    } catch (error) {
+        const response = ApiResponse.errorResponse("Failed to update todo", error, HttpStatus.FORBIDDEN);
+        return res.status(response.status).json(response);
+    }
+};
+
+
+// Delete todo
+export const deleteTodo = (req, res) => {
+    try {
+        let todos = getStoredTodos();
+        const id = Number(req.params.id);
+        const todoToDelete =  todos.find(t => t.id === id);
+        if(!todoToDelete) {
+            const response = ApiResponse.errorResponse("Todo doesn't exists", null, HttpStatus.NOT_FOUND);
+            return res.status(response.status).json(response);
+        }
+        todos = todos.filter(t => t.id !== id);
+        saveTodos(todos);
+        const response = ApiResponse.successResponse("Todo deleted succesfully", todoToDelete, HttpStatus.OK);
         return res.status(response.status).json(response);
     } catch (error) {
         const response = ApiResponse.errorResponse("Failed to update todo", error, HttpStatus.FORBIDDEN);
