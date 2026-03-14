@@ -12,16 +12,18 @@ export const getTodos = (req, res) => {
         let startIndex = perPageItems * (pageNo - 1);
         let endIndex = pageNo * perPageItems;
         const totalItems = getStoredTodos().length;
-        console.log(getStoredTodos())
-        const todoList = [];
-        todoList["data"] = getStoredTodos();
-        console.log(todoList)
+        const todoList = {};
+        if(req.params.pageNo === undefined) {
+            startIndex = 0;
+            endIndex = totalItems;
+        }
+        todoList["data"] = getStoredTodos().slice(startIndex, endIndex);
+        todoList["totalItems"] = totalItems;
         // pageNo       - 1 2 3 4
         // perPageItems - 2 2 2 2
         // startIndex   - 0 2 4 6
         // endIndex     - 2 4 6 8
-        console.log(totalItems);
-        const response = ApiResponse.successResponse("All todos", todoList.data.slice(startIndex, endIndex), HttpStatus.OK);
+        const response = ApiResponse.successResponse("All todos", todoList, HttpStatus.OK);
         return res.status(response.status).json(response);
     } catch(error) {
         const response = ApiResponse.errorResponse("Failed to fetch todos", error, HttpStatus.FORBIDDEN);

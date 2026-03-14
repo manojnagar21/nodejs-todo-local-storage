@@ -3,7 +3,7 @@
     "name": "get-todos",
     "test": "get-todos",
     "type": "request",
-    "end": "2026-03-14T08:35:30.010Z",
+    "end": "2026-03-14T09:56:26.745Z",
     "result": {
       "status": "Submitted",
       "message": "Request 'get-todos' SUBMITTED"
@@ -11,29 +11,29 @@
     "request": {
       "name": "get-todos",
       "type": "request",
-      "url": "http://localhost:5000/api/todos/1",
+      "url": "http://localhost:5000/api/todos/",
       "method": "GET",
       "headers": {
         "Content-Type": "application/json"
       },
-      "submitted": "2026-03-14T08:35:29.907Z"
+      "submitted": "2026-03-14T09:56:26.668Z"
     },
     "response": {
-      "runId": "a1f6ade08738",
+      "runId": "a6617ba1feb8",
       "status": {
         "code": 200,
         "message": "OK"
       },
       "headers": {
         "connection": "close",
-        "content-length": "369",
+        "content-length": "668",
         "content-type": "application/json; charset=utf-8",
-        "date": "Sat, 14 Mar 2026 08:35:29 GMT",
-        "etag": "W/\"171-r/A8GxQbL/Cux2wNItbS/DvMj7E\"",
+        "date": "Sat, 14 Mar 2026 09:56:26 GMT",
+        "etag": "W/\"29c-4JGEE0lg6cCZ4rpackhjxMy3tTY\"",
         "x-powered-by": "Express"
       },
-      "body": "{\n  \"msg\": \"All todos\",\n  \"data\": [\n    {\n      \"id\": 1773395407107,\n      \"title\": \"Make Jvascript Notes\",\n      \"completed\": false,\n      \"createdAt\": \"2026-03-13T09:50:07.107Z\",\n      \"updatedAt\": null\n    },\n    {\n      \"id\": 1773395417782,\n      \"title\": \"Make Typescript Notes\",\n      \"completed\": true,\n      \"createdAt\": \"2026-03-13T09:50:17.782Z\",\n      \"updatedAt\": \"2026-03-13T09:50:41.422Z\"\n    }\n  ],\n  \"success\": true,\n  \"status\": 200,\n  \"timestamp\": \"2026-03-14T08:35:29.988Z\"\n}",
-      "time": 61
+      "body": "{\n  \"msg\": \"All todos\",\n  \"data\": {\n    \"data\": [\n      {\n        \"id\": 1773395407107,\n        \"title\": \"Make Javascript Notes\",\n        \"completed\": true,\n        \"createdAt\": \"2026-03-13T09:50:07.107Z\",\n        \"updatedAt\": \"2026-03-14T09:39:19.953Z\"\n      },\n      {\n        \"id\": 1773395417782,\n        \"title\": \"Make Typescript Notes\",\n        \"completed\": true,\n        \"createdAt\": \"2026-03-13T09:50:17.782Z\",\n        \"updatedAt\": \"2026-03-13T09:50:41.422Z\"\n      },\n      {\n        \"id\": 1773395453403,\n        \"title\": \"Make Core Java Notes\",\n        \"completed\": false,\n        \"createdAt\": \"2026-03-13T09:50:53.403Z\",\n        \"updatedAt\": null\n      },\n      {\n        \"id\": 1773395463414,\n        \"title\": \"Make SQL Server Notes\",\n        \"completed\": false,\n        \"createdAt\": \"2026-03-13T09:51:03.414Z\",\n        \"updatedAt\": null\n      }\n    ],\n    \"totalItems\": 4\n  },\n  \"success\": true,\n  \"status\": 200,\n  \"timestamp\": \"2026-03-14T09:56:26.731Z\"\n}",
+      "time": 39
     }
   }
 ]

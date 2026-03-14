@@ -1,14 +1,14 @@
-update-todo:  # 13/3/2026, 15:20:41:354
+update-todo:  # 14/3/2026, 15:09:19:802
   request:
-    url: http://localhost:5000/api/todos/1773395417782
+    url: http://localhost:5000/api/todos/1773395407107
     method: PATCH
     headers:
       Content-Type: application/json
     body: |-
       {
-        "title": "Make Typescript Notes"
+        "title": "Make Javascript Notes"
       }
-  response:  # 56 ms
+  response:  # 142 ms
     status:
       code: 200
       message: OK
@@ -16,20 +16,20 @@ update-todo:  # 13/3/2026, 15:20:41:354
       connection: close
       content-length: '256'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 09:50:41 GMT
-      etag: W/"100-w/bs89/FftbxiMGzSrc2OK5M+Rc"
+      date: Sat, 14 Mar 2026 09:39:19 GMT
+      etag: W/"100-RgK12VhIaoNQ2ugtWJxaBjY0bwo"
       x-powered-by: Express
     body: |-
       {
         "msg": "Todo updated succesfully",
         "data": {
-          "id": 1773395417782,
-          "title": "Make Typescript Notes",
+          "id": 1773395407107,
+          "title": "Make Javascript Notes",
           "completed": true,
-          "createdAt": "2026-03-13T09:50:17.782Z",
-          "updatedAt": "2026-03-13T09:50:41.422Z"
+          "createdAt": "2026-03-13T09:50:07.107Z",
+          "updatedAt": "2026-03-14T09:39:19.953Z"
         },
         "success": true,
         "status": 200,
-        "timestamp": "2026-03-13T09:50:41.434Z"
+        "timestamp": "2026-03-14T09:39:19.963Z"
       }
