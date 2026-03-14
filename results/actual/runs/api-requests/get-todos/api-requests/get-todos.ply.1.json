@@ -3,7 +3,7 @@
     "name": "get-todos",
     "test": "get-todos",
     "type": "request",
-    "end": "2026-03-13T09:56:46.880Z",
+    "end": "2026-03-14T08:35:30.010Z",
     "result": {
       "status": "Submitted",
       "message": "Request 'get-todos' SUBMITTED"
@@ -11,15 +11,15 @@
     "request": {
       "name": "get-todos",
       "type": "request",
-      "url": "http://localhost:5000/api/todos",
+      "url": "http://localhost:5000/api/todos/1",
       "method": "GET",
       "headers": {
         "Content-Type": "application/json"
       },
-      "submitted": "2026-03-13T09:56:46.786Z"
+      "submitted": "2026-03-14T08:35:29.907Z"
     },
     "response": {
-      "runId": "57cfd4ed1a88",
+      "runId": "a1f6ade08738",
       "status": {
         "code": 200,
         "message": "OK"
@@ -28,12 +28,12 @@
         "connection": "close",
         "content-length": "369",
         "content-type": "application/json; charset=utf-8",
-        "date": "Fri, 13 Mar 2026 09:56:46 GMT",
-        "etag": "W/\"171-QmpthCVOhPUfqrF5Q0mx88VqzL8\"",
+        "date": "Sat, 14 Mar 2026 08:35:29 GMT",
+        "etag": "W/\"171-r/A8GxQbL/Cux2wNItbS/DvMj7E\"",
         "x-powered-by": "Express"
       },
-      "body": "{\n  \"msg\": \"All todos\",\n  \"data\": [\n    {\n      \"id\": 1773395407107,\n      \"title\": \"Make Jvascript Notes\",\n      \"completed\": false,\n      \"createdAt\": \"2026-03-13T09:50:07.107Z\",\n      \"updatedAt\": null\n    },\n    {\n      \"id\": 1773395417782,\n      \"title\": \"Make Typescript Notes\",\n      \"completed\": true,\n      \"createdAt\": \"2026-03-13T09:50:17.782Z\",\n      \"updatedAt\": \"2026-03-13T09:50:41.422Z\"\n    }\n  ],\n  \"success\": true,\n  \"status\": 200,\n  \"timestamp\": \"2026-03-13T09:56:46.860Z\"\n}",
-      "time": 50
+      "body": "{\n  \"msg\": \"All todos\",\n  \"data\": [\n    {\n      \"id\": 1773395407107,\n      \"title\": \"Make Jvascript Notes\",\n      \"completed\": false,\n      \"createdAt\": \"2026-03-13T09:50:07.107Z\",\n      \"updatedAt\": null\n    },\n    {\n      \"id\": 1773395417782,\n      \"title\": \"Make Typescript Notes\",\n      \"completed\": true,\n      \"createdAt\": \"2026-03-13T09:50:17.782Z\",\n      \"updatedAt\": \"2026-03-13T09:50:41.422Z\"\n    }\n  ],\n  \"success\": true,\n  \"status\": 200,\n  \"timestamp\": \"2026-03-14T08:35:29.988Z\"\n}",
+      "time": 61
     }
   }
 ]

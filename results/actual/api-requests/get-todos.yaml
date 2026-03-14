@@ -1,10 +1,10 @@
-get-todos:  # 13/3/2026, 15:26:46:786
+get-todos:  # 14/3/2026, 14:05:29:907
   request:
-    url: http://localhost:5000/api/todos
+    url: http://localhost:5000/api/todos/1
     method: GET
     headers:
       Content-Type: application/json
-  response:  # 50 ms
+  response:  # 61 ms
     status:
       code: 200
       message: OK
@@ -12,8 +12,8 @@ get-todos:  # 13/3/2026, 15:26:46:786
       connection: close
       content-length: '369'
       content-type: application/json; charset=utf-8
-      date: Fri, 13 Mar 2026 09:56:46 GMT
-      etag: W/"171-QmpthCVOhPUfqrF5Q0mx88VqzL8"
+      date: Sat, 14 Mar 2026 08:35:29 GMT
+      etag: W/"171-r/A8GxQbL/Cux2wNItbS/DvMj7E"
       x-powered-by: Express
     body: |-
       {
@@ -36,5 +36,5 @@ get-todos:  # 13/3/2026, 15:26:46:786
         ],
         "success": true,
         "status": 200,
-        "timestamp": "2026-03-13T09:56:46.860Z"
+        "timestamp": "2026-03-14T08:35:29.988Z"
       }

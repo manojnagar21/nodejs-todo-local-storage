@@ -1,5 +1,5 @@
 get-todos:
-  url: http://localhost:5000/api/todos
+  url: http://localhost:5000/api/todos/1
   method: GET
   headers:
     Content-Type: application/json

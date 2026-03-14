@@ -3,15 +3,25 @@ import { getStoredTodos, saveTodos } from "../helpers/todoHelpers.js";
 import { HttpStatus } from "../constants/statusCodes.js";
 
 // Get all todos
-export const getTodos = (_req, res) => {
+export const getTodos = (req, res) => {
     try {
         // To generate fake error
         // throw new Error("Testing my error library!"); 
-        let pageNo = 1;
+        let pageNo = req.params.pageNo;
         let perPageItems = 2;
-        let startIndex = 0;
-        let endIndex = 2;
-        const response = ApiResponse.successResponse("All todos", getStoredTodos().slice(0, 2), HttpStatus.OK);
+        let startIndex = perPageItems * (pageNo - 1);
+        let endIndex = pageNo * perPageItems;
+        const totalItems = getStoredTodos().length;
+        console.log(getStoredTodos())
+        const todoList = [];
+        todoList["data"] = getStoredTodos();
+        console.log(todoList)
+        // pageNo       - 1 2 3 4
+        // perPageItems - 2 2 2 2
+        // startIndex   - 0 2 4 6
+        // endIndex     - 2 4 6 8
+        console.log(totalItems);
+        const response = ApiResponse.successResponse("All todos", todoList.data.slice(startIndex, endIndex), HttpStatus.OK);
         return res.status(response.status).json(response);
     } catch(error) {
         const response = ApiResponse.errorResponse("Failed to fetch todos", error, HttpStatus.FORBIDDEN);
